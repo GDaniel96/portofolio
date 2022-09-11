@@ -67,7 +67,7 @@
 @media only screen and (max-width: 480px) {
     .homepage-main {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
     }
 
     .description {
