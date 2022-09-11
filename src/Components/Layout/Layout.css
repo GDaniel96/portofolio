@@ -1,0 +1,95 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.layout nav a {
+    color: white;
+}
+
+.app-content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: #3a4042;
+    width: 100%;
+    transition: 1s;
+}
+
+
+body.light-mode nav a {
+    color: black;
+}
+
+body.light-mode header {
+    background-color: #ef7e56;
+    color: black;
+    transition: 1s;
+}
+
+nav .theme {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav>a {
+    padding: 8px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(97, 96, 96, 0.6);
+    border: none;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width:480px) {
+
+    nav>a {
+        padding: 4px;
+        width: 37px;
+        height: 37px;
+        background-color: rgba(97, 96, 96, 0.6);
+        border: none;
+    }
+
+    nav>a:hover {
+        padding: 4px;
+        width: 37px;
+        height: 37px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: ease-in-out;
+        transition-duration: 0, 2s;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    nav>a:hover {
+        padding: 8px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: ease-in-out;
+        transition-duration: 0, 2s;
+    }
+}

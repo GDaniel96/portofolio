@@ -1,0 +1,85 @@
+@keyframes pageView {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.accordion-button.collapsed {
+    background: rgba(58, 64, 66, .6);
+    color: white;
+    font-size: large;
+    animation-name: pageView;
+    animation-duration: 300ms;
+}
+
+.light-mode .accordion-button.collapsed {
+    background: rgba(239, 126, 86, .7);
+    color: black;
+    font-size: large;
+    animation-name: pageView;
+    animation-duration: 300ms;
+}
+
+.light-mode .accordion-body {
+    background: rgba(239, 126, 86, .7);
+    color: black;
+}
+
+.light-mode .accordion-header {
+    color: black;
+}
+
+.accordion-body {
+    background: rgba(84, 92, 95, .3);
+    color: white;
+}
+
+.accordion-header {
+    color: white;
+}
+
+.accordion-header img {
+    width: 3%;
+}
+
+div.accordion {
+    border-radius: 30px;
+    width: 100%;
+    margin: 20px;
+    --bs-accordion-border-width: none;
+    --bs-accordion-active-color: none;
+    --bs-accordion-active-bg: none;
+    --bs-accordion-bg: rgba(58, 64, 66, .6);
+}
+
+img {
+    margin-right: 10px;
+}
+
+.educationContainer {
+    animation-name: pageView;
+    animation-duration: 300ms;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width:768px) {
+    
+    .accordion-header img {
+        width: 7%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .accordion-header img {
+        width: 10%;
+        margin-right: 10px;
+    }
+}

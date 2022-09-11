@@ -1,0 +1,86 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.homepage-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation-name: fade-in;
+    animation-duration: 300ms;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.photo {
+    width: 300px;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .homepage-main {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin:20px;
+    }
+
+    .description {
+        font-size: 20px;
+        padding: 10px;
+        width: fit-content;
+    }
+
+    .description>h1 {
+        font-size: 45px;
+    }
+
+    .photo {
+        width: 250px;
+    }
+
+    .photo>img {
+        margin: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .homepage-main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .description {
+        font-size: 20px;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .photo {
+        width: 200px;
+    }
+
+    .photo>img {
+        margin: 0px;
+    }
+}

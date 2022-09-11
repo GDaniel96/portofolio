@@ -1,0 +1,111 @@
+@keyframes projectView {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    animation-name: projectView;
+    animation-duration: 300ms;
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.skillsContainer img {
+    height: 150px;
+    margin-bottom: 20px;
+    animation-name: projectView;
+    animation-duration: 300ms;
+}
+
+.progressBar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 3px;
+    margin-bottom: 50px;
+}
+
+.light-mode .progressBar{
+    background-color: rgb(146, 141, 141);
+}
+
+.progressBar>div {
+    height: 3px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:768px){
+    .projectContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .skillsContainer{
+        gap:20px;
+    }
+
+    .skillsContainer img{
+        height: 100px;
+        padding:5px;
+    }
+
+}
+
+@media only screen and (max-width:480px){
+    .skillsContainer img{
+        height: 100px;
+        padding:10px;
+    }
+
+    .skillsContainer{
+        gap:20px;
+    }
+
+    .projectContainer{
+        width:250px;
+    }
+}

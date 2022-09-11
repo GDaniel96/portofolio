@@ -1,0 +1,67 @@
+@keyframes hobbiesView {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hobbiesContainer {
+    animation-name: hobbiesView;
+    animation-duration: 300ms;
+}
+
+.hobbiesContainer img {
+    margin: 10px;
+    height: 200px;
+    transition: height;
+}
+
+.hobbiesContainer img:hover {
+    height: 207px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+
+.hobbiesContainer h2 {
+    margin: 30px;
+}
+
+.kendama {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.music {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .kendama {
+        gap: 10px;
+    }
+
+    .hobbiesContainer img {
+        height: 140px;
+        pointer-events: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .hobbiesContainer img {
+        height: 90px;
+    }
+}
