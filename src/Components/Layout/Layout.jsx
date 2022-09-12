@@ -31,7 +31,7 @@ const Layout = (props) => {
                     <Link to='/Experience'><FontAwesomeIcon icon={faBriefcase} size='lg' transform='grow-4 right-3.5 down-2'/></Link>
                     <Link to='/Hobbies'><FontAwesomeIcon icon={faIcons} size='lg' transform='grow-4 right-2 down-2'/></Link>
                     <Link to='/Contact-Form'><FontAwesomeIcon icon={faEnvelope} size='lg' transform='grow-4 right-3.5 down-2'/></Link>
-                    <button onClick={toggleColor} className='theme'><FontAwesomeIcon icon={lightModeActive ? faSun : faMoon} transform='down-1'/></button>
+                    <button onClick={toggleColor} className='theme'><FontAwesomeIcon icon={lightModeActive ? faSun : faMoon} transform='down-1' /></button>
                 </nav>
             </header>
             <main className='app-content'>

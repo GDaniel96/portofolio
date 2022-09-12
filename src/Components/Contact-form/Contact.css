@@ -74,8 +74,18 @@ body.light-mode form {
     color: unset;
 }
 
+@media only screen and (max-width:768px) {
+    .contactContainer>h1 {
+        margin: 20px;
+    }
+}
+
 @media only screen and (max-width:480px) {
     .contactContainer {
         width: 300px;
     }
+    .contactContainer>h1 {
+        font-size: 25px;
+    }
+
 }
