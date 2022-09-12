@@ -77,8 +77,8 @@ nav>a {
 
     nav .theme {
         position: fixed;
-        right: 10px;
-        bottom: 87vh;
+        right: 4px;
+        bottom: 20px;
         color: white;
         padding: 0;
         background: none;
