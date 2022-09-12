@@ -51,7 +51,8 @@
 
 @media only screen and (max-width:768px) {
     .kendama {
-        gap: 10px;
+        gap: 20px;
+        margin:0;
     }
 
     .hobbiesContainer img {
